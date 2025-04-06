@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  host: "0.0.0.0"
+
+projects:
+  directory: "./projects"
+
+database:
+  path: "./syncx.db"
+
+balancer:
+  endpoints:
+    - "http://localhost:8080/projects"
+
+scanning:
+  auto_scan_on_add: true
